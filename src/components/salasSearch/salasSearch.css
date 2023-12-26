@@ -1,0 +1,120 @@
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .card {
+        /* min-height: 300px !important; */
+        min-height: 400px !important;
+
+    }
+
+    .cardImg {
+        min-height: 175px;
+    }
+
+    .parrafo {
+        font-size: 15px;
+    }
+
+    .h5clase {
+        font-size: 17px;
+    }
+
+    .btnsolicitarreserva {
+        font-size: 14px;
+    }
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .cardImg {
+        min-height: 175px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card {
+        /* min-height: 300px !important; */
+        min-height: 450px !important;
+
+
+    }
+
+    .cardImg {
+        min-height: 200px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card {
+        /* min-height: 300px !important; */
+        min-height: 450px !important;
+
+
+    }
+
+    .cardImg {
+        min-height: 250px;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .card {
+        min-height: 460px !important;
+    }
+}
+
+
+
+.imgCard {
+    object-fit: cover;
+    width: 100%;
+    height: 15vw;
+
+}
+
+.titulo {
+    letter-spacing: 0.7em;
+    margin-top: 3rem;
+
+    margin-block: 3rem;
+    color: #ffffff;
+}
+
+
+.navlink {
+    color: black !important;
+}
+
+.nav-item .active {
+    color: #ffffff !important;
+    background: linear-gradient(to right, #00e0ff, #0075ff) !important;
+}
+
+.botonup {
+    color: #02dfcc;
+}
+
+
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#myBtn:hover {
+
+    transform: rotate(360deg);
+}
+
+.cardImg {
+    object-fit: cover;
+    width: 100%;
+    height: 12vw;
+}

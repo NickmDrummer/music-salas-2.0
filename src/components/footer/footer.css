@@ -1,0 +1,90 @@
+footer {
+    background: linear-gradient(to right, #003348, #6e2948);
+
+    min-height: 200px;
+
+}
+
+.titleFooter {
+    font-size: 20px;
+}
+
+.logofooter {
+    margin-bottom: 20px;
+    width: 60px;
+}
+
+
+
+a {
+    color: white !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ion-icon {
+    margin: 10px;
+}
+
+.compartir {
+    margin-top: 30px;
+}
+
+.iconos {
+    font-size: 30px;
+    color: white;
+}
+
+
+
+.container {
+    margin-bottom: 20px !important;
+}
+
+.footer>.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* media queries */
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .avatar-container {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .perfilphoto {
+        max-width: 60px !important;
+        margin-right: 10px !important;
+    }
+
+    .img-thumbnail {
+        padding: 0.1rem;
+    }
+
+    .titleFooter {
+        font-size: 16px;
+    }
+
+    .textoCreditos {
+        font-size: 13px;
+    }
+
+
+
+
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .avatar-container {
+        margin-bottom: 1rem;
+    }
+}

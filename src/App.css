@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari&family=Poppins:wght@500;600&family=Square+Peg&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html,
+body {
+    font-family: 'Manjari', sans-serif !important;
+    background: linear-gradient(to right, #000c13, #002332);
+
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: white !important;
+}
+
+.card {
+    border: none !important;
+}
+
+
+
+.btn-morado {
+    background: linear-gradient(to right, #0c859b, #3a1526);
+    border: none !important;
+}
+
+.dark-aqua {
+    background-color: #003b4e !important;
+}
+
+.dark-aqua:hover {
+    box-shadow: 0px 0px 8px #00e0ff;
+
+}
+
+.white-hover:hover {
+    box-shadow: 0px 0px 8px #fff;
+    background-color: #e8fffe !important;
+    color: black !important;
+    border: 1px solid #00e0ff !important;
+}
+
+
+.marginTop4 {
+    margin-top: 4rem !important;
+}
+
+.contenedorSalas {
+    margin-top: 7rem;
+}
