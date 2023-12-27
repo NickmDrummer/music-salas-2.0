@@ -4,7 +4,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import SecSalas from './pages/SecSalas.jsx';
 import SecVerSala from './pages/SecVerSala.jsx';
-import './scss/styles.scss';
+// Import our custom CSS
+import '../src/scss/styles.scss';
+
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap';
 
 const router = createBrowserRouter([
   {
