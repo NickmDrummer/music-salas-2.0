@@ -11,7 +11,6 @@ function BodyVerSala() {
   const showError = () => {
     toastMensaje.current.show({
       severity: 'error',
-      summary: 'Error',
       detail: 'Complete el campo de texto',
       life: 3000,
     });
