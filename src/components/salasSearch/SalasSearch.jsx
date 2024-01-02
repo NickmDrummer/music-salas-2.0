@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { animateScroll as scroll } from 'react-scroll';
+// import { animateScroll as scroll } from 'react-scroll';
+import useTop from '../../useTop';
 import { useSalaStore } from '../salaStore';
 
 import data from '../../db.json';
@@ -7,7 +8,7 @@ import data from '../../db.json';
 import './salasSearch.css';
 
 function SalasSearch() {
-  scroll.scrollToTop();
+  useTop();
 
   const enviarId = useSalaStore(state => state.enviarId);
 

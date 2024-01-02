@@ -1,9 +1,8 @@
-import { useEffect } from 'react';
-
 const useTop = function () {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  window.scroll({
+    top: 0,
+    behavior: 'instant',
+  });
 };
 
 export default useTop;
