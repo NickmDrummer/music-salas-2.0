@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-// import { animateScroll as scroll } from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll';
 import useTop from '../../useTop';
 import { useSalaStore } from '../salaStore';
 
