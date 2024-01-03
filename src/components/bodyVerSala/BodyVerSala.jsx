@@ -9,20 +9,39 @@ function BodyVerSala() {
   const toastMensaje = useRef(null);
 
   const showError = () => {
-    toastMensaje.current.show({
-      severity: 'error',
-      detail: 'Complete el campo de texto',
-      life: 3000,
-    });
+    const pToast = document.querySelector('.p-toast-message-content');
+    if (pToast) {
+      pToast.remove();
+      toastMensaje.current.show({
+        severity: 'error',
+        detail: 'Complete el campo de texto',
+        life: 3000,
+      });
+    } else {
+      toastMensaje.current.show({
+        severity: 'error',
+        detail: 'Complete el campo de texto',
+        life: 3000,
+      });
+    }
   };
 
   const showSuccess = () => {
-    toastMensaje.current.show({
-      severity: 'success',
-
-      detail: 'Mensaje enviado correctamente',
-      life: 3000,
-    });
+    const pToast = document.querySelector('.p-toast-message-content');
+    if (pToast) {
+      pToast.remove();
+      toastMensaje.current.show({
+        severity: 'success',
+        detail: 'Mensaje enviado correctamente',
+        life: 3000,
+      });
+    } else {
+      toastMensaje.current.show({
+        severity: 'success',
+        detail: 'Mensaje enviado correctamente',
+        life: 3000,
+      });
+    }
   };
 
   const handleMessage = e => {
