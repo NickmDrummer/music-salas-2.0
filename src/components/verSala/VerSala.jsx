@@ -2,12 +2,13 @@ import useTop from '../../useTop';
 import BodyVerSala from '../bodyVerSala/BodyVerSala';
 import HeaderIrSala from '../headerIrSala/HeaderIrSala';
 
-function VerSala() {
+function VerSala({ state }) {
   useTop();
+
   return (
     <>
-      <HeaderIrSala />
-      <BodyVerSala />
+      <HeaderIrSala state={state} />
+      <BodyVerSala state={state} />
     </>
   );
 }

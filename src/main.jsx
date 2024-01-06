@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: '/versala',
+    path: '/sala/:id',
     element: <SecVerSala />,
   },
 ]);

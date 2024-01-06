@@ -1,9 +1,9 @@
-import { useSalaStore } from '../../components/salaStore';
 import './headerIrSala.css';
 
-function HeaderIrSala() {
-  const salaEnviada = useSalaStore(state => state.sala);
-  const { nombre, avatarSrc, portadaSrc, descripcionCard, alt } = salaEnviada;
+function HeaderIrSala({ state }) {
+  const sala = state.sala;
+  const { nombre, portadaSrc, avatarSrc, alt, descripcionCard } = sala;
+
   return (
     <div>
       <div className="container">

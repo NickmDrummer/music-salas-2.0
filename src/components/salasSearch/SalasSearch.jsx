@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 import useTop from '../../useTop';
-import { useSalaStore } from '../salaStore';
 
 import data from '../../db.json';
 
@@ -10,7 +9,7 @@ import './salasSearch.css';
 function SalasSearch() {
   useTop();
 
-  const enviarId = useSalaStore(state => state.enviarId);
+  let location = useLocation();
 
   const onClickUp = () => {
     scroll.scrollToTop();
@@ -57,8 +56,8 @@ function SalasSearch() {
 
                   <div className="">
                     <Link
-                      to="/versala"
-                      onClick={enviarId}
+                      to={`/sala/${sala.key}`}
+                      state={{ sala: sala }}
                       className="btn-morado dark-aqua btn mt-sm-2 mt-lg-auto text-white"
                       role="button"
                     >

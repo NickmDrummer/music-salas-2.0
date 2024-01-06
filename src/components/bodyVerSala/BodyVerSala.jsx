@@ -1,11 +1,20 @@
 import { Toast } from 'primereact/toast';
 import { useRef } from 'react';
-import { useSalaStore } from '../../components/salaStore';
+// import { useSalaStore } from '../../components/salaStore';
 
 import InputFechaCopy from '../inputFechaCopy/InputFechaCopy';
 import './bodyVerSala.css';
 
-function BodyVerSala() {
+function BodyVerSala({ state }) {
+  const sala = state.sala;
+  const {
+    precioHora,
+    precioHoraEstudio,
+    alquilerInstrumentos,
+    horario,
+    direccion,
+    telefono,
+  } = sala;
   const toastMensaje = useRef(null);
 
   const showError = () => {
@@ -56,16 +65,6 @@ function BodyVerSala() {
     showSuccess();
     formMensaje.reset();
   };
-
-  const salaEnviada = useSalaStore(state => state.sala);
-  const {
-    precioHora,
-    precioHoraEstudio,
-    alquilerInstrumentos,
-    direccion,
-    telefono,
-    horario,
-  } = salaEnviada;
 
   const DollarIcon = (
     <svg
