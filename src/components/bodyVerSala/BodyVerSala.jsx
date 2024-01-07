@@ -1,12 +1,12 @@
 import { Toast } from 'primereact/toast';
 import { useRef } from 'react';
-// import { useSalaStore } from '../../components/salaStore';
-
 import InputFechaCopy from '../inputFechaCopy/InputFechaCopy';
+import data from './../../db.json';
 import './bodyVerSala.css';
 
 function BodyVerSala({ state }) {
-  const sala = state.sala;
+  const salaId = state;
+  const salaRecibida = data[salaId];
   const {
     precioHora,
     precioHoraEstudio,
@@ -14,7 +14,7 @@ function BodyVerSala({ state }) {
     horario,
     direccion,
     telefono,
-  } = sala;
+  } = salaRecibida;
   const toastMensaje = useRef(null);
 
   const showError = () => {

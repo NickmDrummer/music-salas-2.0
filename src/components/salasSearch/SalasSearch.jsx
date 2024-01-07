@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 import useTop from '../../useTop';
 
@@ -8,8 +8,6 @@ import './salasSearch.css';
 
 function SalasSearch() {
   useTop();
-
-  let location = useLocation();
 
   const onClickUp = () => {
     scroll.scrollToTop();
@@ -57,7 +55,6 @@ function SalasSearch() {
                   <div className="">
                     <Link
                       to={`/sala/${sala.key}`}
-                      state={{ sala: sala }}
                       className="btn-morado dark-aqua btn mt-sm-2 mt-lg-auto text-white"
                       role="button"
                     >

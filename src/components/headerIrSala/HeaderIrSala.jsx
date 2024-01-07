@@ -1,8 +1,10 @@
+import data from './../../db.json';
 import './headerIrSala.css';
 
 function HeaderIrSala({ state }) {
-  const sala = state.sala;
-  const { nombre, portadaSrc, avatarSrc, alt, descripcionCard } = sala;
+  const salaId = state;
+  const salaRecibida = data[salaId];
+  const { nombre, portadaSrc, avatarSrc, alt, descripcionCard } = salaRecibida;
 
   return (
     <div>
