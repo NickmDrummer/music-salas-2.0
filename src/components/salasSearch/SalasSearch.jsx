@@ -44,7 +44,7 @@ function SalasSearch() {
                   className="card-img-top cardImg"
                   alt="portada"
                 />
-                <div className="card-body text-center align-items-end d-grid">
+                <div className="card-body text-center d-flex flex-column row-gap-3 justify-content-between">
                   <div className="align-self-start">
                     <h5 className="card-title h5clase">{sala.nombre}</h5>
                     <p className="card-text parrafo text-start">
@@ -54,7 +54,7 @@ function SalasSearch() {
 
                   <div className="">
                     <Link to={`/sala/${sala.key}`}>
-                      <button className="btn-morado btn mt-sm-2 mt-lg-auto text-white">
+                      <button className="btn-morado btn  text-white">
                         Ver Sala
                       </button>
                     </Link>
