@@ -25,6 +25,10 @@ p {
 .btn-morado {
     background: linear-gradient(to right, #0c859b, #3a1526);
     border: none !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .dark-aqua {
